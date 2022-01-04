@@ -37,7 +37,7 @@ body{
     transition: 0.3s;
     background-image: url('./assets/svg/logo.svg');
     background-size: contain;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
   }
 .logo:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
@@ -96,7 +96,7 @@ body{
 .switch-lng{
     width: 70px;
     height: 50px;
-    padding-top: 10px;
+    padding-top: 30px;
     font-family: Inter-VariableFont, sans-serif;
     font-size: 20px;
     color:#ffffff;
@@ -165,11 +165,10 @@ h2 {
 }
 .div-title {
     margin: 0 auto;
+    width: 48.61%;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
 }
-.skills-title, .price-title {
-    width: 48.61%;
-}
+
 .skills-items {
     display: flex;
     justify-content: space-around;
@@ -181,10 +180,9 @@ h2 {
     width: 320px;
     height: 240px;
     text-align: center;
-    /* padding-top: 7%; */
-    
+    padding-top: 2px;
     color: #ffffff;
-  }
+  } 
 .item-title {
     padding-top: 100px;
     font-family: Inter-VariableFont, sans-serif;
@@ -225,4 +223,48 @@ h2 {
 p {
     margin: 0;
     padding: 0;
+}
+.portfolio-title {
+    width: 220px;
+}
+.portfolio-section {
+    padding-top: 1px;
+}
+.portfolio-btns {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 60px 0;
+}
+.btn-season {
+    width: 220px;
+    height: 55px;
+    font-family: Inter-VariableFont, sans-serif;
+    font-size: 20px;
+    border: 3px solid #bdae82;
+}
+.btn-season:not(:last-child) {
+    background-color: #000000;
+    color: #bdae82;
+}
+.btn-season:last-child {
+    background-color: #bdae82;
+    color: #000000;
+} 
+.portfolio-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 auto;
+}
+.pictures {
+    margin: 0;
+    padding: 0;
+}
+.p-top {
+    margin-top: -4px;
+}
+.video-title {
+    margin-top: -4px;
 }
