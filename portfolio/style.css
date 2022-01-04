@@ -268,3 +268,29 @@ p {
 .video-title {
     margin-top: -4px;
 }
+.video-img {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+.video-player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.player-btn {
+    background-image: url('./assets/svg/Play_hover.svg');
+    background-repeat: no-repeat;
+    background-color: inherit;
+    border: none;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 347px;
+}
+.player-btn:hover{
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
