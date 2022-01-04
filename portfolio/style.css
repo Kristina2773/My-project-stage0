@@ -10,8 +10,8 @@ html {
     scroll-behavior: smooth; 
 }
 body{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     margin: 0;
     padding: 0;
 }
@@ -113,7 +113,7 @@ body{
     padding-top: 160px;
     padding-left: 80px;
     padding-right: 860px;
-    padding-bottom: 450px;
+    padding-bottom: 330px;
     background-image: url('./assets/img/header-bg.jpg');
     background-position: center -90px;
     background-repeat: no-repeat;
@@ -143,4 +143,86 @@ body{
     font-family: Inter-VariableFont, sans-serif;
     font-size: 20px;
     background-color: #bdae82;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+.section-title {
+    width: 152px;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-family: Merriweather-Bold, serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: #bdae82;
+    background-color: #000000;
+}
+.section{
+    background-color: #000000;
+}
+.div-title {
+    margin: 0 auto;
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+}
+.skills-title, .price-title {
+    width: 48.61%;
+}
+.skills-items {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4.1%;
+    flex-wrap: wrap;
+  }
+.skill-item {
+    background-position: center top;
+    width: 320px;
+    height: 240px;
+    text-align: center;
+    /* padding-top: 7%; */
+    
+    color: #ffffff;
+  }
+.item-title {
+    padding-top: 100px;
+    font-family: Inter-VariableFont, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 40px;
+}
+.item-text{
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 280px;
+    font-family: Inter-VariableFont, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+}
+  
+.skill-item:nth-child(1) {
+    background-image: url('./assets/svg/camera.svg');
+    background-repeat: no-repeat;
+    background-size: 62px 50px;
+  }
+  .skill-item:nth-child(2) {
+    background-image: url('./assets/svg/video.svg');
+    background-repeat: no-repeat;
+    background-size: 60px 50px;
+  }
+  .skill-item:nth-child(3) {
+    background-image: url('./assets/svg/image.svg');
+    background-repeat: no-repeat;
+    background-size: 66px 50px;
+  }
+  .skill-item:nth-child(4) {
+    background-image: url('./assets/svg/mic.svg');
+    background-repeat: no-repeat;
+    background-size: 32px 50px;
+  }
+p {
+    margin: 0;
+    padding: 0;
 }
