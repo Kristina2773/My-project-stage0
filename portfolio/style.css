@@ -6,6 +6,7 @@
     font-family: Merriweather-Bold;
     src: url("assets/fonts/Merriweather-Bold.ttf");
 }
+
 html {
     scroll-behavior: smooth; 
 }
@@ -294,6 +295,9 @@ p {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
 }
+.price-section {
+    padding-bottom: 100px;
+}
 .price-list {
     display: flex;
     justify-content: center;
@@ -353,16 +357,84 @@ p {
 .btns:hover  {
     color: #ffffff;
 }
-/* .contacts-section {
-    background-image: url("./assets/img/contacts.jpg");
-    /* width: 1440px;
-    height: 700px; */
-} */
-/* .contact-section-title {
+ 
+.contact-section-title {
+    font-family: Merriweather-Bold, serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80px;
     background-color: inherit;
-} */
-/* .contacts .container {
-    background: url('./assets/img/contacts-bg.jpg');
-    background-size: auto 700px;
-    background-position: center center;
-  } */
+    color: #bdae82;
+} 
+ .contacts-section{
+    background: url('./assets/img/contacts.jpg');
+    background-repeat: no-repeat;
+    height: 700px;
+  } 
+.contact-container {
+    width: 450px;
+    height: 445px;
+    padding-top: 60px;
+    margin-left: 970px;
+    
+}
+.email, .tel, .comment {
+    padding-left: 16px;
+    color: #bdae82;
+    background-color: inherit;
+    border: 2px solid #bdae82;
+}
+
+.email, .tel {
+    width: 428px;
+    height: 44px;
+}
+.comment {
+    margin-top: 20px;
+    width: 428px;
+    height: 92px;
+    resize: none;
+}
+.email {
+    margin-top: 39px;
+} 
+.tel {
+    margin-top:20px;
+}
+.email::placeholder {
+    font-family: Inter-VariableFont, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #bdae82;
+    font-size: 20px;
+  }
+.tel::placeholder {
+    font-family: Inter-VariableFont, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #bdae82;
+    font-size: 20px;
+  }
+.comment::placeholder {
+    font-family: Inter-VariableFont, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #bdae82;
+    font-size: 20px;
+ }
+.btn-contact {
+    width: 220px;
+    height: 55px;
+    margin-top: 26px;
+    background-color: #bdae82;
+    border: none;
+    font-family: Inter-VariableFont, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+}
