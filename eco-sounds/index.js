@@ -5,13 +5,8 @@ const playBtn = document.querySelector('.play-btn');
 let isPlay = false;
 const birds = document.querySelectorAll('.nav-link');
 
-function changeData(e) {
-    const target = e.target;
-    if (target.classList.contains('sound')){
-        background.style.backgroundImage = `url(/assets/img/${target.dataset.bird}.jpg)`;
-        audio.src = `/assets/audio/${target.dataset.bird}.mp3`;
-    }
-};
+audio.src = '/assets/audio/forest.mp3';
+let fileName = 'forest.mp3';
 
 function playAudio() {
     if (!isPlay) {
@@ -57,25 +52,39 @@ birds.forEach((bird) => bird.addEventListener('click', (elem) => {
     changeActiveButton(elem, birds, 'nav-link', 'active-bird-btn'); 
 }));
 
-
-
-function download (path, filename) {
-    const anchor = document.createElement('a');
-    const wrapper = document.createElement('div');
+function changeData(e) {
+    const target = e.target;
+    if (target.classList.contains('sound')){
+        background.style.backgroundImage = `url(/assets/img/${target.dataset.bird}.jpg)`;
+        audio.src = `/assets/audio/${target.dataset.bird}.mp3`;
+        fileName = `${target.dataset.bird}.mp3`;
+        // download(audio.src, `${target.dataset.bird}.mp3`);
+        console.log(audio.src, fileName);
+    }
+};
+const anchor = document.createElement('a');
+const wrapper = document.createElement('div');
     wrapper.classList.add('download');
     document.querySelector('.player').appendChild(wrapper);
     document.querySelector('.download').appendChild(anchor);
-    
+const downloadBtn = document.querySelector('.download');
+
+function download (path, filename) {  
     anchor.href = path;
     anchor.download = filename;
-
-    // anchor.click();
-    const downloadBtn = document.querySelector('.download');
-    downloadBtn.addEventListener('click', () => {
-        anchor.click();
-    })
-    document.querySelector('.download').removeChild(anchor);
+    anchor.click();
+    // document.querySelector('.download').removeChild(anchor);
+    console.log(path, filename, anchor, downloadBtn);
 }
+downloadBtn.addEventListener('click', () => {
+    download(audio.src, fileName);
+})
+// download('/assets/audio/forest.mp3', 'forest.mp3');
 
-download('/assets/audio/forest.mp3', 'forest.mp3');
+
+
+    
+
+
+
 
