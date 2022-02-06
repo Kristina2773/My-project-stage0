@@ -71,7 +71,7 @@ function changeData(e) {
         } else {
             signVolume.classList.remove('black-sign');
         }
-        audio.src = `/assets/audio/${target.dataset.sound}.mp3`;
+        audio.src = `./assets/audio/${target.dataset.sound}.mp3`;
         fileName = `${target.dataset.sound}.mp3`;
     }
 };
