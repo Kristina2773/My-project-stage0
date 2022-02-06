@@ -11,23 +11,24 @@
 <body>
     <header class = "header">
         <div class = "header-container container">
-            <img class="logo sound" data-bird = "forest" src="assets/svg/logo.svg" alt="logo">
+            <img class="logo sound no-active" data-sound = "forest" src = "assets/svg/logo.svg" alt="logo">
+            <img class= "violin sound no-active" data-sound = "moonSonate" src = "assets/svg/violin.svg" alt="violin">
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"> 
-                        <a href="#solo" class="nav-link sound" data-bird = "solovey">Соловей</a>
+                        <a href="#ocean" class="nav-link sound" data-sound = "ocean">Океан</a>
                     </li>
                     <li class="nav-item"> 
-                        <a href="#drozd" class="nav-link sound" data-bird = "drozd">Дрозд</a>
+                        <a href="#rain" class="nav-link sound" data-sound = "rain">Шум дождя</a>
                     </li>
                     <li class="nav-item"> 
-                        <a href="#malinovka" class="nav-link sound" data-bird = "zarynka">Малиновка</a>
+                        <a href="#winter" class="nav-link sound" data-sound = "winter">Зимняя вьюга</a>
                     </li>
                     <li class="nav-item"> 
-                        <a href="#javoronok" class="nav-link sound" data-bird = "javoronok">Жаворонок</a>
+                        <a href="#leaves" class="nav-link sound" data-sound = "leaves">Шелест листьев</a>
                     </li>
                     <li class="nav-item"> 
-                        <a href="#slavka" class="nav-link sound" data-bird = "slavka">Славка</a>
+                        <a href="#bells" class="nav-link sound" data-sound = "bells">Колокольчики</a>
                     </li>
                 </ul>
             </nav>
@@ -36,6 +37,14 @@
     <main class = "main-container">
         <div class = "container player">
             <button class = "play-btn" data-player = "play"> </button>
+            <div class="download">
+                <a class="a" href = "#"></a>
+            </div>
+            
+        </div>
+        <div class="control">
+            <input type = "range" class = "volume" min = "0" max = "1" value = "1" step = "0.1"/>
+            <div class="sign-volume"> </div>
         </div>
     </main>
     <footer class = "footer-container">
@@ -43,7 +52,7 @@
             <div class="footer-data">
                 <p>©</p>
                 <p>2022</p>
-                <p><a href="https://github.com/Kristina2773" class="footer-link" target="_blank">github</a></p>
+                <p><a href="https://github.com/Kristina2773" class="footer-link" target="_blank">Kristina2773</a></p>
             </div>
             <div class="rsschool">
                 <a href="https://rs.school/js-stage0/" target="_blank">

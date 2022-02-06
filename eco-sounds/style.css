@@ -51,16 +51,23 @@ body {
     cursor: pointer;
     filter: brightness(0) invert(1);
     transition: 0.5s;
-  }
+}
+.violin {
+    margin-bottom: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
 .nav {
     margin-left: auto;
-    width: 47%;
+    width: 50%;
 }
 .nav-list {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* gap: 35px; */
+    /* gap: 5px; */
     list-style: none;
     color: #ffffff;
 }
@@ -74,7 +81,7 @@ body {
     color: #bdae82;
 }
 
-.nav-link.active-bird-btn {
+.nav-link.active-sound-btn {
     color: #bdae82;
 }
 .main-container {
@@ -85,12 +92,15 @@ body {
     min-height: 280px;
     background-image: url("./assets/img/forest.jpg");
     background-size: cover;
+   
 }
 .play-btn {
     margin: auto;
     position: absolute;
     left: 44%;
-    top: calc(100% - 410px);
+    top: 0;
+    bottom: 0;
+    /* top: calc(100% - 410px); */
     border: none;
     background-color: inherit;
     width: 160px;
@@ -107,8 +117,9 @@ body {
 }
 
 .download {
-    position: absolute;
-    margin-top: 15%;
+    /* position: absolute; */
+    /* margin-top: 2%; */
+    margin-top: 40%;
     width: 60px;
     height: 60px;
     background-image: url("/assets/svg/download.svg");
@@ -119,6 +130,43 @@ body {
     cursor: pointer;
     transition: 0.5s;
     transform: scale(1.2);
+}
+.control {
+    margin-top: 33%;
+    margin-right: -2%;
+}
+.sign-volume {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/svg/with-sound.svg");
+    filter: invert(100%);
+}
+.sign-volume.black-sign {
+    filter: invert(0%);    
+}
+
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 13px;
+    height: 10px;
+    border-radius: 30%;
+    background: #4e3c04;
+}
+.volume::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    
+}
+.volume {
+    opacity: 0;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #fff;
+    transform: rotate(-90deg);
+    border-radius: 7px;
+}
+.volume.active {
+    opacity: 1;
 }
 .footer-container{
     padding: 0;
