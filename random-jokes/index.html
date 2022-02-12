@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-quote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header class = " header container">
+        <table class="switch-lng">
+            <img class="logo" src = "./assets/svg/book.svg" alt="logo">
+            <tr>
+                <td class="en" >
+                    <button class="lang btn-en active-lang-btn" name="button" data-language="EN">en</button>
+                </td>
+                <td> <p class="slash">/</p> </td> 
+                <td class="ru">
+                    <button class="lang btn-ru" name="button" data-language="RU">ru</button>
+                </td>
+            </tr>
+        </table>
+        <div class="sign-volume"> </div>
+    </header>
+    <main class = "main-container">
+        <div class = "container main">
+            <img src = "./assets/img/magic-book.jpg" width = "500px" height = "500px" class = "background-quote" alt = "background">
+            <button class="quote-button btn-hover" type = "button" name = "button">Вдохновляющая цитата дня</button>
+            <p class = "quote"></p>
+            <p class = "author-quote"></p>
+        </div>
+    </main>
+    <footer class = "footer-container">
+        <div class = "container footer">
+            <div class="footer-data">
+                <p>©</p>
+                <p>2022</p>
+                <p><a href="https://github.com/Kristina2773" class="footer-link" target="_blank">Kristina2773</a></p>
+            </div>
+            <div class="rsschool">
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <img src="./assets/svg/rss.svg" width="135" height="50" alt="RS School"/>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
