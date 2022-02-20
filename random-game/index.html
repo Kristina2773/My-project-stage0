@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/favicon.ico">
+</head>
+<body>
+    <header class = "container">
+        <!-- <img class="logo" src = "./assets/img/logo3.jpg"> -->
+        <h1 class="sudoku-title">Sudoku</h1>
+    </hader>
+    <main class="main-container">
+        <div class = "container main">
+            <div class="rules-and-btn">
+                <div class="rules">
+                    <p>Each row, column and square (9 spaces each) needs to be filled out with the numbers 1-9, without repeating any numbers within the row, column or square.</p>
+                </div>
+                <button class = "button-level nine" type = "button" name = "button">Level
+                    <div>
+                        <img class="star" src="./assets/svg/star.svg">
+                        <img class="star" src="./assets/svg/star.svg">
+                        <img class="star" src="./assets/svg/star.svg">
+                    </div>
+                </button>
+                <button class = "button-level six" type = "button" name = "button">Level
+                    <div>
+                        <img class="star" src="./assets/svg/star.svg">
+                        <img class="star" src="./assets/svg/star.svg">
+                    </div>
+                </button>
+                <button class = "button-level three" type = "button" name = "button">Level
+                    <img class="star one" src="./assets/svg/star.svg">
+                </button>
+                <button class = " button" type = "button" name = "button">Check</button>
+            </div>
+            <div class="table" id="sudoku"> </div>
+            <table class="result-table" cellspacing = "0">
+                <caption class="table-title">Table results</caption>
+                <tr>
+                    <th>№</th>
+                    <th>Time</th>
+                    <th>Game results</th>
+                </tr>
+                <tr>
+                    <td class="score-index">-</td>
+                    <td class="score-time">-</td>
+                    <td class="score-result">-</td>
+                </tr>
+                <tr>
+                    <td class="score-index">-</td>
+                    <td class="score-time">-</td>
+                    <td class="score-result">-</td>
+                </tr>
+                <tr>
+                    <td class="score-index">-</td>
+                    <td class="score-time">-</td>
+                    <td class="score-result">-</td>
+                </tr>
+                <tr>
+                    <td class="score-index">-</td>
+                    <td class="score-time">-</td>
+                    <td class="score-result">-</td>
+                </tr>
+                <tr>
+                    <td class="score-index">-</td>
+                    <td class="score-time">-</td>
+                    <td class="score-result">-</td>
+                </tr>
+                <tr>
+                    <td class="score-index">-</td>
+                    <td class="score-time">-</td>
+                    <td class="score-result">-</td>
+                </tr>
+                <tr>
+                    <td class="score-index">-</td>
+                    <td class="score-time">-</td>
+                    <td class="score-result">-</td>
+                </tr>
+                <tr>
+                    <td class="score-index">-</td>
+                    <td class="score-time">-</td>
+                    <td class="score-result">-</td>
+                </tr>
+                <tr>
+                    <td class="score-index">-</td>
+                    <td class="score-time">-</td>
+                    <td class="score-result">-</td>
+                </tr>
+                <tr>
+                    <td class="score-index">-</td>
+                    <td class="score-time">-</td>
+                    <td class="score-result">-</td>
+                </tr>
+            </table>
+            <div class = "game-end">
+                <span class = "game-text" >You are win</span>
+                <span class = "score"></span>
+                <div class="btn-continue-game">
+                    <span class="try-again">Try again</span>
+                    <span class="restart">Restart</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class = "footer-container">
+        <div class = "container footer">
+            <div class="footer-data">
+                <p>©</p>
+                <p>2022</p>
+                <p><a href="https://github.com/Kristina2773" class="footer-link" target="_blank">Kristina2773</a></p>
+            </div>
+            <div class="rsschool">
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <img src="./assets/svg/rss.svg" width="135" height="50" alt="RS School"/>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
