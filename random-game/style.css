@@ -1,0 +1,258 @@
+/* #sudoku td {
+    border:1px solid #cdcdcd;
+    background:#f8f8f8;
+    padding: 5px 10px;
+    margin: 0;
+} */
+
+@font-face {
+    font-family: Sudoku;
+    src: url("assets/fonts/Sudoku-Italic.ttf");
+}
+
+#sudoku input {
+    height: 112%;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 150px;
+    height: 100px;
+}
+
+.container {
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.main {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.table {
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+
+.footer-container{
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 3%;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+  }
+
+.footer-link {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s;
+}
+.footer-data {
+    display: flex;
+    gap: 17%;
+    margin-bottom: 5px;
+    z-index: 1;
+}  
+
+.table {
+    width: 454px;
+    height: 454px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item, .input {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    padding: 0;
+    font-weight: 400;
+    font-size: 30px;
+    vertical-align: bottom;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    line-height: 40px;
+}
+.item {
+    padding-top: 5px;
+    border: 1px solid black;
+}
+.input {
+    margin-top: -5px;
+    padding-bottom: 4px;
+    outline: none;
+    background-color: lightgrey;
+}
+
+.sudoku-title {
+    margin-left: 45%;
+    font-family: Sudoku;
+    font-size: 70px;
+}
+
+#inputLength {
+    width: 100px;
+}
+
+.table .item:nth-child(3n) {
+    border-right: 3px solid rgb(236, 14, 14);
+}
+.table .item:nth-child(9n) {
+    border-right: 1px solid black;
+}
+.border-bottom{
+    border-bottom: 3px solid rgb(236, 14, 14);
+}
+
+.error {
+    background-color: red;
+}
+
+.td-hover {
+    background-color: rgb(43, 255, 0);
+}
+
+.game-end {
+    /* position: absolute;
+    /* margin: auto; */ 
+    /* margin-bottom: 30%;
+    margin-left: 39%; */
+    background-color: #fff;
+    border: 6px solid grey;
+    width: 300px;
+    height: 150px;
+    font-size: 20px;
+}
+/* .game-text {
+   margin-top: 100px; 
+} */
+
+.rules {
+    margin-top: 5%;
+    width: 300px;
+    height: 140px;
+    background-color: inherit;
+    border: 6px solid grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+.game-end {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.game-end.active{
+    display: flex;
+}
+.game-text {
+    font-size: 40px;
+}
+.btn-continue-game {
+    display: flex;
+    gap: 20px;
+}
+.try-again {
+    border: 3px solid grey;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+.restart {
+    border: 3px solid grey;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+}
+
+.rules-and-btn {
+    display: flex;
+    flex-direction: column; 
+}
+
+.footer{
+    position: absolute;
+    top: 600px;
+    margin: 0 auto;
+}
+
+.button-level {
+    margin-left: 24%;
+    margin-top: 5%;
+    color: black;
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    border: 6px solid grey;
+}
+.button {
+    margin-top: 10%;
+    margin-left: 10%;
+    color: black;
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+    border: 6px solid grey;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+}
+
+.result-table {
+    position: absolute;
+    border: 6px solid grey;
+    right: 3%;
+}
+th, td {
+    padding: 4px;
+    color: black;
+    text-align: center;
+    border: 1px solid grey;
+}
+.table-title {
+    margin-bottom: 5px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+    color: black;
+}
