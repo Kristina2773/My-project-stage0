@@ -3,8 +3,8 @@ Rolling Scopes - Stage0
 # Ссылки на deploy:
 
 1. [Portfolio](https://kristina2773.github.io/My-projects-stage0/portfolio/)
-2. [Image-galery](https://kristina2773.github.io/My-projects-stage0/random-jokes/)
-3. [Audio-player](https://kristina2773.github.io/My-projects-stage0/eco-sounds/)
+2. [Random-jokes](https://kristina2773.github.io/My-projects-stage0/random-jokes/)
+3. [Eco-sounds](https://kristina2773.github.io/My-projects-stage0/eco-sounds/)
 4. [Random-game](https://kristina2773.github.io/My-projects-stage0/random-game/)
 
 # Описание проектов:
